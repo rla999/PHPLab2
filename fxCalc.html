@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Ryan Lasher
+PHP Project - Lab #2
+February 14, 2019
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>F/X Calculator | PHP Project 2 | Ryan Lasher</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Ryan's F/X Calculator</h1>
+        <form name="fxCalc" action="fxCalc.php" method="post">
+            Currency input:
+            <input type="number" name="currencyinput">
+            <select name="currencysource">
+                <option value="CAD" selected>CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="USD">USD</option>
+            </select> <br>
+            Currency output:
+            <input type="number" name="currencyoutput" readonly>
+            <select name="currencydestination">
+                <option value="CAD">CAD</option>
+                <option value="EUR" selected>EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="USD">USD</option>
+            </select> <br> <br>
+            <input type="submit" value="Convert">
+            <input type="reset" value="Reset">
+        </form>
+        <?php
+        ?>
+    </body>
+</html>
